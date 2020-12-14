@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>Example</title>
+<style>
+    body{
+        background-color: #f0ffff;
+    }
+  .media {
+    display: flex;
+    align-items: flex-start;
+    background-color: #DBF1FF;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 30em;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 30px;
+  }
+  .media-object {
+    margin-right: 1em;
+  }
+  img {
+      height:140px ;
+      width: 140px;
+      border-radius: 50%;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }
+  .media {
+    transition: transform .5s;
+    }
+
+  .media:hover,
+  .media:focus {
+      background-color:#BACFFD;
+      transform: scale3d(1.05, 1.05, 1);
+      opacity: 1;
+  }
+</style>
+</head>
+<body>
+<div class="media">
+  <img class="media-object" src="../assets/6.jpg" alt="Sample photo">
+  <div class="media-body">
+    <h3 class="media-heading">Death Note(Anime)</h3>
+    <p>An intelligent high school student goes on a secret crusade to eliminate criminals 
+        from the world after discovering a notebook capable of killing anyone 
+        whose name is written into it.</p>
+  </div>
+</div>
+</body>
+</html>
