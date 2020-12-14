@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="" href=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        html {
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            color: #272830
+        }
+        body { 
+            padding: 0;
+            margin: 0;
+        }
+        .haderContainer {
+            background-color: lightblue;
+            padding: 1em;
+            text-align: center;
+            font-weight:bold;
+            font-size:x-large;
+        }
+        .footerContainer {
+            background-color: lightblue;
+            padding: 0.5em;
+            text-align: center;
+            font-weight:bold;
+            font-size:x-large;
+        }
+        .mainContainer {
+            display: flex;
+            flex: 1;
+        }
+        .mainContentItem {
+            text-align: left;
+            background-color: darkcyan;
+        }
+        .sidebarLeftItem {
+            flex: 0 0 10vw;
+            background-color: lightgray;
+            text-align: center;
+            font-weight: bold;
+            font-size:large;
+            padding-top: 1em;
+        }
+        .sidebarRightItem {
+            flex: 0 0 10vw;
+            background-color: lightgray;
+            text-align: center;
+            font-size:large;
+            font-weight: bold;
+            padding-top: 1em;
+        }
+        .mainContentItem {
+            flex: 3 0px;
+        }
+        article {
+            padding: 10px;
+            margin: 10px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <header class="haderContainer">Navigation bar</header>
+    <div class="mainContainer">
+        <sidebar class="sidebarLeftItem">Left Side bar</sidebar>
+        <section class="mainContentItem">
+            <article>
+                <h2>Sports</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.
+                       Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Suspendisse
+                        in est ante in nibh mauris cursus mattis. Tristique risus nec feugiat in.</p>
+            </article>
+            <article>
+                <h2>Business</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.
+                      Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Suspendisse
+                       in est ante in nibh mauris cursus mattis. Tristique risus nec feugiat in.</p>
+            </article>
+            <article>
+                <h2>General</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Suspendisse
+                    in est ante in nibh mauris cursus mattis.</p>
+                <p> Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.
+                    Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Suspendisse
+                     in est ante in nibh mauris cursus mattis. Tristique risus nec feugiat in.
+                     in est ante in nibh mauris interdum posuere lorem ipsum dolor sit amet.
+                      cursus mattis. Tristique risus nec feugiat in.
+                    </p>
+            </article>
+        </section>
+        <sidebar class="sidebarRightItem">Right Side bar</sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+    <script type="text/javascript"></script>
+</body>
+</html>
