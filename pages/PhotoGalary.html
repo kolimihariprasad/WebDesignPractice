@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>photo Galary</title>
+    <meta charset="UTF-8">
+    <link rel="" href=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .cards img {
+        margin: 10px;
+        border: 3px solid #000;
+        box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+        width: 30vw;
+        height: 20vw;
+    }
+    img {
+        transition: transform .5s;
+        opacity: 0.8;
+    }
+
+    img:hover,
+    img:focus {
+        transform: scale3d(1.05, 1.05, 1);
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+<main class="cards">
+  <img src="../assets/1.jpeg" alt="Sample photo">
+  <img src="../assets/2.jpeg" alt="Sample photo">
+  <img src="../assets/3.jpeg" alt="Sample photo">
+  <img src="../assets/4.jpg" alt="Sample photo">
+  <img src="../assets/5.jpg" alt="Sample photo">
+  <img src="../assets/6.jpg" alt="Sample photo">
+  <img src="../assets/7.jpg" alt="Sample photo">
+  <img src="../assets/8.jpg" alt="Sample photo">
+  <img src="../assets/9.jpg" alt="Sample photo">
+</main>
+</body>
+</html>
