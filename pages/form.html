@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input types</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <form>
+        <div class="formCard">
+            <h1>HTML 5 Form Input Fields</h1>
+        </div>
+        <div class="tags">
+            <label for="text">Text input type: </label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div class="tags">
+            <label for="pwd">Pwd input type: </label>
+            <input type="password" id="pwd" name="pwd">
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+        <div class="tags">
+            <label for="email">Email input type: </label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+        <div class="tags">
+            <label for="url">Url input type: </label>
+            <input type="url" id="url" name="url">
+            <error-output class="url-error" for="url"></error-output>
+        </div>
+        <div class="tags">
+            <label for="number">Number input type: </label>
+            <input type="number" id="number" name="number">
+            <error-output class="number-error" for="number"></error-output>
+        </div>
+        <div class="tags">
+            <label for="tel">Tel input type: </label>
+            <input type="tel" id="tel" name="tel">
+            <error-output class="tel-error" for="tel"></error-output>
+        </div>
+        <div class="tags">
+            <label for="search">Search input type: </label>
+            <input type="search" id="search" name="search">
+            <error-output class="search-error" for="search"></error-output>
+        </div>
+        <div class="nativeDateTImePicker">
+            <label for="party">Choose Date and time: </label>
+            <input type="datetime-local" id="party" name="bday">
+            <span class="validity"></span>
+            <error-output class="text-error" for="party"></error-output>
+        </div>
+        <div class="tags">
+            <label for="salary">Choose your salary: </label>
+            <input type="range" id="salary" name="salary" min="300000" max="800000" step="1000" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+            <error-output class="text-error" for="salary"></error-output>
+        </div>
+        <div class="btn">
+            <button type="submit" class="btnStyle"> Submit</button>
+            <button type="reset" class="btnStyle" > Reset</button>
+        </div>
+    </form>
+    <script src="../js/form.js"></script>    
+</body>
+</html>
